@@ -14,21 +14,21 @@ header{
     top:0;
     background:rgba(0,0,0,.2);
     backdrop-filter:blur(12px);
-    padding:8px 20px;
+    height:90px; /* tinggi header */
     z-index:99;
 }
 
 .logo-header{
+    height:100%;
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:flex-start; /* kiri */
 }
 
 .logo-header img{
-    height:50px;
+    height:90px;
     width:auto;
-    max-width:280px;
-    display:block;
+    object-fit:contain;
 }
 .container{max-width:1000px;margin:auto;padding:20px}
 .hero{text-align:center;padding:60px 20px}
@@ -57,9 +57,9 @@ button{width:100%;padding:16px;border:none;border-radius:14px;font-weight:800;cu
 <body>
 
 <header>
-  <div class="container logo-header">
-    <img src="logo3.png" alt="Sounds Of Downtown">
-  </div>
+    <div class="container logo-header">
+        <img src="logo.png" alt="Sounds Of Downtown">
+    </div>
 </header>
 
 <section class="hero">
