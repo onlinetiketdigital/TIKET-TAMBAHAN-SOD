@@ -9,17 +9,25 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Poppins,sans-serif;background:linear-gradient(135deg,#3b0764,#6b21a8,#9333ea);color:#fff;overflow-x:hidden}
 body:before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px);background-size:5px 5px;pointer-events:none}
+header{
+    position:relative;
+    background:transparent;
+    padding:0;
+    height:0;
+}
+
 .logo-header{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:180px; /* sesuaikan sampai pas di batas warna */
+    z-index:100;
 }
 
 .logo-header img{
+    height:50px;
     width:auto;
-    height:45px; /* ukuran kecil */
-    max-width:220px; /* landscape */
-    object-fit:contain;
+    max-width:250px;
 }
 .container{max-width:1000px;margin:auto;padding:20px}
 .hero{text-align:center;padding:60px 20px}
