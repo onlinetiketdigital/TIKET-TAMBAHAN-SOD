@@ -9,7 +9,18 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Poppins,sans-serif;background:linear-gradient(135deg,#3b0764,#6b21a8,#9333ea);color:#fff;overflow-x:hidden}
 body:before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px);background-size:5px 5px;pointer-events:none}
-header{position:sticky;top:0;background:rgba(0,0,0,.2);backdrop-filter:blur(12px);padding:15px 20px;z-index:99}
+.logo-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo-header img{
+    width:auto;
+    height:45px; /* ukuran kecil */
+    max-width:220px; /* landscape */
+    object-fit:contain;
+}
 .container{max-width:1000px;margin:auto;padding:20px}
 .hero{text-align:center;padding:60px 20px}
 .hero h1{font-family:Anton,sans-serif;font-size:clamp(40px,8vw,90px);letter-spacing:3px}
@@ -36,7 +47,11 @@ button{width:100%;padding:16px;border:none;border-radius:14px;font-weight:800;cu
 </head>
 <body>
 
-<header><div class="container">🎫 CHECKOUT TIKET FESTIVAL</div></header>
+<header>
+  <div class="container logo-header">
+    <img src="logo.png" alt="Logo Festival">
+  </div>
+</header>
 
 <section class="hero">
 <h1>TIKET TAMBAHAN SODFESTIVAL</h1>
